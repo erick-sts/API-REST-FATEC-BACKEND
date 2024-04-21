@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds":[
+        {
+            "src": "./src/database/db.js",
+            "use":"@vercel/node"
+        }
+        
+    ],
+    "routes": [
+        {
+            "src":"(.*)",
+            "dest": "/src/database/db.js"
+        }
+    ]
+}

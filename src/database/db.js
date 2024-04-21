@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const connectDatabase = () => {
     console.log('Conectando com o banco de dados... ⌛');
@@ -9,4 +9,4 @@ const connectDatabase = () => {
    .catch((error) => console.log(error))
 }
 
-module.exports = connectDatabase
+module.exports = connectDatabase;
