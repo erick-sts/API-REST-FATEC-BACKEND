@@ -96,17 +96,30 @@ const removeProfessor = async (req, res) => {
 
   res.status(200).send({message: "Professor removido com sucesso!"})
 }
+const numeroProfessores = async (req, res) => {
 
-const buscarPorCursos = async (req, res) => {
-  const curso1 = req.params.curso1, curso2 = req.params.curso2, curso3 = req.params.curso3;
+  const numeroProfessores = await professorService.listarProfessoresService().countDocuments();
 
-  const professores = await professorService.buscarPorCursosService(curso1, curso2, curso3);
+  res.status(200).send({numeroProfessores})
+}
 
-  if (!professores) {
-    return res.status(400).send({message: "Não há professores cadastrados com esse nome"})
+const buscarProfessorPeloCurso = async (req, res) => {
+
+  let cursos = req.params.cursos;
+  cursos = cursos.split(',')
+
+  const professores = await professorService.buscarProfessorPeloCursoService(cursos);
+
+  if(!professores || professores.length === 0) {
+    res.status(404).send("Não há professores que ministram algum dos cursos mencionados")
   }
 
-  res.status(200).send(professores);
+  res.send(professores)
+
+  // if(!professor) {
+  //   res.status(400).send("Nenhum professor cadastrado leciona nos cursos mencionados")
+  // }
+  // res.status(200).send(professor)
 }
 module.exports = {
   cadastrarProfessor,
@@ -114,5 +127,6 @@ module.exports = {
   buscarProfessoresNome,
   atualizarProfesor,
   removeProfessor,
-  buscarPorCursos,
+  numeroProfessores,
+  buscarProfessorPeloCurso
 }
