@@ -97,10 +97,22 @@ const removeProfessor = async (req, res) => {
   res.status(200).send({message: "Professor removido com sucesso!"})
 }
 
+const buscarPorCursos = async (req, res) => {
+  const curso1 = req.params.curso1, curso2 = req.params.curso2, curso3 = req.params.curso3;
+
+  const professores = await professorService.buscarPorCursosService(curso1, curso2, curso3);
+
+  if (!professores) {
+    return res.status(400).send({message: "Não há professores cadastrados com esse nome"})
+  }
+
+  res.status(200).send(professores);
+}
 module.exports = {
   cadastrarProfessor,
   buscarTodosProfessores,
   buscarProfessoresNome,
   atualizarProfesor,
   removeProfessor,
+  buscarPorCursos,
 }
