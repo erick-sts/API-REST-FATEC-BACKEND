@@ -2,7 +2,6 @@ const usuarioService = require('../services/usuarioService');
 
 //Validações com express-validator
 const { body, validationResult } = require('express-validator');
-//const bodyParser = require('body-parser');
 
 const cadastrarUsuario = async (req, res) => {
   
