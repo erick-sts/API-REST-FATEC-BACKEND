@@ -2,7 +2,7 @@
     "version": 2,
     "builds":[
         {
-            "src": "./api/api.js",
+            "src": "./api/src/database/db.js",
             "use":"@vercel/node"
         }
         
@@ -10,7 +10,7 @@
     "routes": [
         {
             "src":"(.*)",
-            "dest": "/"
+            "dest": "/api/api.js"
         }
     ]
 }
