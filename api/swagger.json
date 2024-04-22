@@ -8,7 +8,7 @@
         {
             "url": "https://api-rest-fatec-backend.onrender.com",
             "description": "Servidor Render"
-        }
+        },
         {
             "url": "http://localhost:3000/",
             "description": "local server"
