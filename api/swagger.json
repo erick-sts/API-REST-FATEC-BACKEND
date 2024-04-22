@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Fazer descricao",
+        "title": "Essa é uma API fullstack que conta com front-end e back-end completos construída para um trabalho universitário e uso da secretaria da FATEC Votorantim. Essa aplicação consiste no cadastro de professores e na manipulção dos dados dos mesmos, sendo possível gravar informações no banco de dados, remover, editar e listar com base em buscas no database. O objetivo desse software é que seja fácil e simples o cadastro de professores para qualquer sistema de ensino, sistema esse manipulado pelas respectivas secretarias",
         "version": "v1"
     },
     "servers": [

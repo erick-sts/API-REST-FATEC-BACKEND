@@ -5,8 +5,9 @@ const usuarioRoute = require('./src/routes/usuarioRoute');
 const cors = require('cors');
 
 const swaggerRoute = require("./src/routes/swagger.route");
+import dotenv from 'dotenv'
 
-
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
