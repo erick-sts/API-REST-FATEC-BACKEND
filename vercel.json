@@ -1,4 +1,16 @@
 {
     "version": 2,
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api/src" }]    
+    "builds":[
+        {
+            "src": "./src/database/db.js",
+            "use":"@vercel/node"
+        }
+        
+    ],
+    "routes": [
+        {
+            "src":"(.*)",
+            "dest": "/src/routes/"
+        }
+    ]
 }
