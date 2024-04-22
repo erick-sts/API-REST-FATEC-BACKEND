@@ -32,6 +32,7 @@ Essa API RESTful utiliza dos métodos http post, get, put e delete, completando 
 - Nodejs
 - Expressjs (+ express-validator)
 - MongoDB (+ mongoose)
+- Swagger
 
 ## Front end
 - HTML / CSS / TypeScript
@@ -54,7 +55,7 @@ Pré-requisitos: npm + dependecias
 git clone https://github.com/erick-sts/API-REST-FATEC-BACKEND.git
 
 # entrar na pasta do projeto back end
-cd Frontend-PISS
+cd API-REST-FATEC-BACKEND
 
 # instalar as dependencias
 npm i
@@ -64,14 +65,14 @@ npm run dev
 ```
 
 ## Front end web
-Pré-requisitos: npm / yarn
+Pré-requisitos: npm
 
 ```bash
 # clonar repositório
 git clone https://github.com/erick-sts/API-REST-FATEC-FRONTEND.git
 
 # entrar na pasta do projeto front end web
-cd API-REST-FATEC-FRONTEND
+cd Frontend-PISS
 
 # instalar dependências
 npm install
