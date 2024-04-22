@@ -2,15 +2,15 @@
     "version": 2,
     "builds":[
         {
-            "src": "./src/database/db.js",
+            "src": "./api/api.js",
             "use":"@vercel/node"
         }
         
     ],
     "routes": [
         {
-            "src":"/(.*)",
-            "dest": "/api/app.js"
+            "src":"(.*)",
+            "dest": "/"
         }
     ]
 }
