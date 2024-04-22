@@ -1,0 +1,155 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Fazer descricao",
+        "version": "v1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000/",
+            "description": "local server"
+        }
+    ],
+    "paths": {
+        "/usuarios": {
+            "post": {
+                "summary": "Cadastrar usuário",
+                "operationId": "cadastrarUsuario",
+                "responses": {
+                    "200": {
+                        "description": "Usuário cadastrado com sucesso"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Listar usuários",
+                "operationId": "listarUsuarios",
+                "responses": {
+                    "200": {
+                        "description": "Lista de usuários recuperada com sucesso"
+                    }
+                }
+            }
+        },
+        "/professores": {
+            "post": {
+                "summary": "Cadastrar professor",
+                "operationId": "cadastrarProfessor",
+                "responses": {
+                    "200": {
+                        "description": "Professor cadastrado com sucesso"
+                    }
+                }
+            },
+            "get": {
+                "summary": "Buscar todos os professores",
+                "operationId": "buscarTodosProfessores",
+                "responses": {
+                    "200": {
+                        "description": "Lista de professores recuperada com sucesso"
+                    }
+                }
+            },
+            "/nome/{nome}": {
+                "get": {
+                    "summary": "Buscar professores pelo nome",
+                    "operationId": "buscarProfessoresNome",
+                    "parameters": [
+                        {
+                            "name": "nome",
+                            "in": "path",
+                            "description": "Nome do professor",
+                            "required": true,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Lista de professores encontrados com sucesso"
+                        }
+                    }
+                }
+            },
+            "/num_professores": {
+                "get": {
+                    "summary": "Obter número de professores",
+                    "operationId": "numeroProfessores",
+                    "responses": {
+                        "200": {
+                            "description": "Número de professores recuperado com sucesso"
+                        }
+                    }
+                }
+            },
+            "/cursos/{cursos}": {
+                "get": {
+                    "summary": "Buscar professor pelo curso",
+                    "operationId": "buscarProfessorPeloCurso",
+                    "parameters": [
+                        {
+                            "name": "cursos",
+                            "in": "path",
+                            "description": "Nome do curso",
+                            "required": true,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Professor encontrado com sucesso"
+                        }
+                    }
+                }
+            },
+            "/{numero_matricula}": {
+                "put": {
+                    "summary": "Atualizar professor",
+                    "operationId": "atualizarProfessor",
+                    "parameters": [
+                        {
+                            "name": "numero_matricula",
+                            "in": "path",
+                            "description": "Número de matrícula do professor",
+                            "required": true,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Professor atualizado com sucesso"
+                        }
+                    }
+                },
+                "delete": {
+                    "summary": "Remover professor",
+                    "operationId": "removerProfessor",
+                    "parameters": [
+                        {
+                            "name": "numero_matricula",
+                            "in": "path",
+                            "description": "Número de matrícula do professor",
+                            "required": true,
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "Professor removido com sucesso"
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    
+}
