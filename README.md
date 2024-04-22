@@ -2,7 +2,7 @@
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/leonfagundes27/Backend-Projeto-Integrador/blob/main/LICENSE) 
 
 ## Link do repositório do Front-end
-
+https://github.com/erick-sts/API-REST-FATEC-FRONTEND
 
 # <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/info.png" width="30" height="30"> Sobre o projeto 
 (link do projeto publicado)
@@ -53,7 +53,7 @@ Pré-requisitos: npm + dependecias
 npm i
 
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/erick-sts/API-REST-FATEC-BACKEND.git
 
 # entrar na pasta do projeto back end
 cd Backend-Projeto-Integrador
@@ -80,10 +80,5 @@ yarn start
 ```
 
 # Autor
-Erick Oliveira
-Juliano Ramalho
-Leon Fagundes
-Lucas Adami
-Matheus Garibaldi
-Vitor Ruan
+Erick Oliveira, Juliano Ramalho, Leon Fagundes, Lucas Adami, Matheus Garibaldi, Vitor Ruan
 
