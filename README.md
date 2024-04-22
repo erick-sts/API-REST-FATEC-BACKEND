@@ -5,7 +5,7 @@
 https://github.com/erick-sts/API-REST-FATEC-FRONTEND
 
 # <img src="https://github.com/leonfagundes27/Assets/blob/main/Images/info.png" width="30" height="30"> Sobre o projeto 
-(link do projeto publicado)
+([link do projeto publicado](https://api-rest-fatec-backend.onrender.com/doc))
 
 Essa é uma API fullstack que conta com front-end e back-end completos construída para um trabalho universitário e uso da secretaria da FATEC Votorantim.
 
@@ -54,7 +54,7 @@ Pré-requisitos: npm + dependecias
 git clone https://github.com/erick-sts/API-REST-FATEC-BACKEND.git
 
 # entrar na pasta do projeto back end
-cd Backend-Projeto-Integrador
+cd API-REST-FATEC-BACKEND
 
 # instalar as dependencias
 npm i
@@ -71,13 +71,19 @@ Pré-requisitos: npm / yarn
 git clone https://github.com/erick-sts/API-REST-FATEC-FRONTEND.git
 
 # entrar na pasta do projeto front end web
-cd Frontend-PISS
+cd API-REST-FATEC-FRONTEND
 
 # instalar dependências
 npm install
 
 # executar o projeto
 ng serve
+```
+
+# Requisições HTTP com REST Client
+```bash
+
+
 ```
 
 # Autores
