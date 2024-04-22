@@ -15,7 +15,7 @@ app.use('/usuarios', usuarioRoute);
 
 connectDatabase();
 app.listen(port, () => {
-    console.log(`App rodando na porta ${port} 💻`);
+    console.log(`App rodando na porta, ${port} 💻`);
 });
 
 module.exports = app;
