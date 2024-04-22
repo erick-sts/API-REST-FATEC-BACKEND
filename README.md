@@ -82,8 +82,63 @@ ng serve
 
 # Requisições HTTP com REST Client
 ```bash
+# //GET para listar todos os professores
+GET https://api-rest-fatec-backend.onrender.com/professores
+Content-Type: application/json
+###
 
+# //GET para buscar professores pelo curso
+GET https://api-rest-fatec-backend.onrender.com/professores/cursos/CDN
+Content-Type: application/json
+###
 
+# //GET para listar o número de professores cadastrados
+GET https://api-rest-fatec-backend.onrender.com/professores/num_professores
+Content-Type: application/json
+###
+
+# //GET para listar todos os professores pela busca por nome
+GET https://api-rest-fatec-backend.onrender.com/professores/nome/nomeBuscado
+Content-Type: application/json
+###
+
+# //POST para cadastrar um novo professor
+POST https://api-rest-fatec-backend.onrender.com/professores
+Content-Type: application/json
+
+{
+    "nome": "JOÃO DA SILVA JUNIOR",
+    "numero_matricula": "937753",
+    "cod_ue": "1092842",
+    "titulacao": "Mestre",
+    "referencia": "Campus Leste, Bloco C",
+    "lates": "http:/www.linkdoprofessorlattes11.com.br",
+    "curso": "DSM",
+    "email": "novoprofessor@email.com",
+    "observacoes": "Professor novo cadastrado"
+}
+###
+# //DELETE para remover um professor do banco de dados
+DELETE https://api-rest-fatec-backend.onrender.com/professores/numerodeMatriculaProfessorARemover
+Content-Type: application/json
+###
+
+# //PUT atualizar os dados de um professor
+PUT https://api-rest-fatec-backend.onrender.com/professores/190248
+Content-Type: application/json
+
+{
+    "nome": "JOÃO DA SILVA JUNIOR",
+    "numero_matricula": "937753",
+    "cod_ue": "1092842",
+    "titulacao": "Mestre",
+    "referencia": "Campus Leste, Bloco C",
+    "lates": "http:/www.linkdoprofessorlattes11.com.br",
+    "curso": "DSM",
+    "email": "novoprofessor@email.com",
+    "observacoes": "ATUALIZAÇÃO!!!"
+}
+###
 ```
 
 # Autores
