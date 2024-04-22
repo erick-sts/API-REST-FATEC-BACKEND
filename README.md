@@ -54,7 +54,7 @@ Pré-requisitos: npm + dependecias
 git clone https://github.com/erick-sts/API-REST-FATEC-BACKEND.git
 
 # entrar na pasta do projeto back end
-cd API-REST-FATEC-BACKEND
+cd Frontend-PISS
 
 # instalar as dependencias
 npm i
