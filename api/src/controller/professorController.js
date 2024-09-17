@@ -115,7 +115,7 @@ const buscarProfessorPeloCurso = async (req, res) => {
   }
 
   res.send(professores)
-
+  //
   // if(!professor) {
   //   res.status(400).send("Nenhum professor cadastrado leciona nos cursos mencionados")
   // }
